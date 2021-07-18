@@ -1,0 +1,24 @@
+def solution(board, moves):
+    answer = 0
+    baguni=[]
+    
+    size_m=len(moves)
+    size_b=len(board)
+    
+    for i in range(size_m):
+        number_m=moves[i]-1
+        for j in range(size_b):
+            number_b=board[j][number_m]
+            if number_b: #0이 아닐때
+                if baguni: #NULL이 아닐때
+                    if baguni[-1]==number_b: #마지막꺼와 새로 들어오는게 같으면 마지막꺼 pop, answer+2
+                        baguni.pop()
+                        answer+=2
+                    else:
+                        baguni.append(number_b)
+                        board[j][number_m]=0
+                else: #NULL이면 비교없이 추가
+                    baguni.append(number_b)
+                    board[j][number_m]=0
+                break
+    return answer
