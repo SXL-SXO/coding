@@ -1,3 +1,7 @@
+#백준 2504번 ()[]를 입력받아 각 규칙에 맞게 값 구하기
+
+#아직 못품,,
+
 import sys
 input=sys.stdin.readline
 
