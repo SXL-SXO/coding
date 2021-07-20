@@ -1,3 +1,4 @@
+#백준 9012번 ()의 짝지가 맞으면 yes 틀리면 no 반환
 import sys
 input=sys.stdin.readline
 
