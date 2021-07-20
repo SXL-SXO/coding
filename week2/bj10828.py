@@ -1,3 +1,5 @@
+#20210721 백준 스택 만들기 문제
+
 import sys
 input=sys.stdin.readline
 stack=[]
