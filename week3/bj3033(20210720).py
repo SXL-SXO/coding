@@ -48,5 +48,5 @@ for k in range(26):
                                     else: 
                                         break
             
-print(longlength)
+print(longlength) #답이 틀린다 왜? asdfasdfasdf이렇게 반복된 문자열은 4~11 모두 동일해서 8을 반환한다. 하지만 asdfasdfasdfasdf의 경우 값은 8이어야해서 너무 어렵다
 
