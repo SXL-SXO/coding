@@ -1,3 +1,5 @@
+#사람명수를 입력받고 나이 이름 을 명수만큼 입력받아 나이순으로 정렬 버블정렬안됨,,
+
 import sys
 
 num=int(sys.stdin.readline())
