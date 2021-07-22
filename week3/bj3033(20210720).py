@@ -1,3 +1,5 @@
+#코드 미완이라서 계속 수정중,,
+
 num=int(input())
 munja=input()
 
