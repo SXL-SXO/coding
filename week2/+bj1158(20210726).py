@@ -1,3 +1,5 @@
+#숫자 두 개 n,k 입력받아서 1~n 중 k번째 숫자를 계속 꺼내와서 만드는 요세푸스 수열 프린트
+
 import sys
 
 n, k=sys.stdin.readline().split() #n0은 몇번까지 있는지 n1은 몇번째마다 제거할껀지
@@ -24,3 +26,4 @@ while(1):
         o_index=o_index-len(list_)
         
 print("<",", ".join(yosa_list)[:],">", sep='')
+#화가나게도 이 프린트때문에 두 번이나 틀렸다,,
