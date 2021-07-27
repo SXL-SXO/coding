@@ -1,4 +1,6 @@
-ment=2
+#백준 N을 입력받고 0과 1로 이루어진 NxN을 입력해서 2667번 1로 표시된 곳에 연결된 숫자를 세고(긱 단지) 연결된 숫자의 개수(단지 내 세대 수) 개수를 출력 
+
+ment=2 #아파트표식? 0과 1로 표시되어잇으므로 2부터 
 
 def dfs_apt(N,a,b):
     global ment
@@ -120,10 +122,10 @@ aptment=[]
 leng=[]
 
 for a in range(N):
-    apt__=sys.stdin.readline()
-    apt.append([])
+    apt__=sys.stdin.readline() #문자열 입력
+    apt.append([]) #2차원으로 만들기위해 추가
     for b in range(N):
-        apt[a].append(int(apt__[b]))
+        apt[a].append(int(apt__[b])) #2차원 배열로 만듦
        
 for i in range(N):
     for j in range(N):
