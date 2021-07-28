@@ -1,3 +1,5 @@
+#z형식으로 순서대로 좌표를 훑고갈 때, 특정좌표의 순서 구하기
+
 import sys
 import time
 
@@ -26,8 +28,6 @@ def turn(first_r,first_c,num,result):
                 turn(first_r+2**num,first_c,num-1,result-2**num*2**num)
             else:
                 turn(first_r+2**num,first_c+2**num,num-1,result)
-    
-#turn(0,0,3,256) turn(0,0,2,
 
 N, r, c=sys.stdin.readline().split()
 #start = time.time()
