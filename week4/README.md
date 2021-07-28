@@ -20,3 +20,9 @@ return heapq.heappop(heap)
 노드출력
 print(heap[0])
 
+#20210728
+2번 틀리고 풀었다 재귀함수로 어떻게 접근해야할지 모르겠어서 큐형식으로 N번까지 순서대로 좌표를 넣고 다시 좌표의 인덱스를 출력하는 형식으로 했는데 시간오버가 났다. 2* 10은 너무 많아서 시간이 넘어가서 오바되더라
+시간재는 함수 
+import time
+start = time.time()
+print("time :", time.time() - start)
