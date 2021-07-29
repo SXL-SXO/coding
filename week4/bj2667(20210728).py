@@ -144,3 +144,46 @@ print(ment-2)
 
 for list in leng:
     print(list)
+    
+
+#타임오버
+'''
+def turn(by,num,N):
+    by_change=by
+    if num!=N:
+        beayeol_c_1=[]
+        beayeol_c_2=[]
+        beayeol_c_3=[]
+        beayeol_r_1=[]
+        beayeol_r_2=[]
+        beayeol_r_3=[]
+        for i in range(2**num*2**num): #[a,b]로 추가할려고 했으나 배열 속 배열검색법을 몰라서 이렇게 함
+            beayeol_r_1.append(by[0][i])
+            beayeol_c_1.append(by[1][i]+2**num)
+            beayeol_r_2.append(by[0][i]+2**num)
+            beayeol_c_2.append(by[1][i])
+            beayeol_r_3.append(by[0][i]+2**num)
+            beayeol_c_3.append(by[1][i]+2**num)
+        #beayeol=[2**num+x for x in by[x]]도 가능
+        by[0]=by[0]+beayeol_r_1+beayeol_r_2+beayeol_r_3
+        by[1]=by[1]+beayeol_c_1+beayeol_c_2+beayeol_c_3
+        turn(by,num+1,N)
+
+import sys
+
+N, r, c=sys.stdin.readline().split()
+N=int(N)
+r=int(r)
+c=int(c)
+
+by=[[0,0,1,1],[0,1,0,1]]
+
+turn(by,1,N)
+
+for a in range(len(by[0])):
+    if by[0][a]==r and by[1][a]==c:
+        where=a
+        break
+
+print(where)
+'''
