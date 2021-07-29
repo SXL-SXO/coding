@@ -1,3 +1,4 @@
+#N입력받고 N높이를 구한다 앞에거보다 뒤에게 크면 보이니까 간단하다
 import sys
 
 N=sys.stdin.readline()
