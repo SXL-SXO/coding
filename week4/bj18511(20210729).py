@@ -14,7 +14,7 @@ def num(s_kkk,leng,result,n,k,ori): #(정렬된배열, 이 자릿수의 값을 �
             if result+(10**leng)*s_kkk[i-1]<=n: #값이 작으면 더해줌
                 result+=(10**leng)*s_kkk[i-1]
                 break
-            if i==1:
+            if i==1: #마지막까지 작은게 없으면 한자릿수를 줄여서 입력받는다
                 num(s_kkk,ori-1,0,N,K,ori-1)   
     num(s_kkk,leng-1,result,n,k,ori)
 import sys
