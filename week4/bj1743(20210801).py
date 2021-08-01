@@ -1,3 +1,4 @@
+#타임에러
 import sys
 sys.setrecursionlimit(100000)
 
