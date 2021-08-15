@@ -1,3 +1,5 @@
+#카카오채용연계 2021 거리두기문제
+#테스트3번에서 오류가 남
 from collections import deque
 def check(where):
     meeting=[[]*x for x in range(5)]
@@ -15,12 +17,12 @@ def check(where):
     while(inter):
         m,n=inter.pop()
         for i in range(8):
-            if  m+x_next[i]==-1 or m+x_next[i]==5 or n+y_next[i]==-1 or n+y_next[i]==5:
+            if  m+x_next[i]==-1 or m+x_next[i]==5 or n+y_next[i]==-1 or n+y_next[i]==5: 
                     continue
-            if i<4 and meeting[m+x_next[i]][n+y_next[i]]=='P':
+            if i<4 and meeting[m+x_next[i]][n+y_next[i]]=='P': #거리가 한 칸인 경우
                 poss=0
                 break
-            if i>3 and meeting[m+x_next[i]][n+y_next[i]]=='P':
+            if i>3 and meeting[m+x_next[i]][n+y_next[i]]=='P': #거리가 두 칸인 경우
                 if meeting[m+x_next[i]][n]!='X' or meeting[m][n+y_next[i]]!='X':
                     poss=0
                     break
